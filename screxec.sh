@@ -24,3 +24,4 @@ echo now updating this file
 wget https://raw.githubusercontent.com/juril33t/scr-exec/master/screxec.sh
 mv screxec.sh.1 screxec.sh
 echo update successful
+sudo reboot
