@@ -1,15 +1,21 @@
+#!/bin/bash
+
 echo Hello guys this is my wonderful update script
 
-###########################
-###Do what you want to do##
-###########################
+function update {
+  #update everything
+  sudo apt-get update
+  sudo apt-get -y upgrade
+  sudo apt-get -y dist-upgrade
+  sudo apt-get clean
+  sudo apt-get -y autoremove
+}
+ 
+################################
+###Do what you want to do HERE##
+################################
 
-#update everything
-sudo apt-get update
-sudo apt-get -y upgrade
-sudo apt-get -y dist-upgrade
-sudo apt-get clean
-sudo apt-get -y autoremove
+#update
 
 #update this file
 cd ~/screxec
