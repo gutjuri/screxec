@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 
 echo Hello guys this is my wonderful update script
 
-function update {
-  #update everything
+#update everything
+update() {
   sudo apt-get update
   sudo apt-get -y upgrade
   sudo apt-get -y dist-upgrade
